@@ -1,0 +1,93 @@
+$bg_col_white: #ffffff;
+$text-color: #000000;
+$main-with: 1020px;
+
+// WARNING: Не решена проблема с перескакивающим блоком. В наименованиях стилей - ад
+
+.header {
+
+
+  background: $bg_col_white;
+
+}
+
+.head {
+  padding: 20px 0 23px;
+  border-bottom: 1px solid #c3c3c3;
+  margin: auto;
+
+
+
+
+}
+
+.head_logo {
+  padding-left: 100px;
+
+}
+
+
+
+
+    .header__phone {
+      display: block;
+
+    }
+
+    .phone {
+      text-decoration: none;
+      padding-right: 100px;
+      display: block;
+      color: $text-color;
+      font-size: 20px;
+
+    }
+
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+//
+// div {
+//   // border: 1px solid red;
+// }
+//
+//
+// .header {
+//   height: 110px;
+//   color: $bg_col_white;
+//   display: block;
+//   // border: 1px solid red;
+//   width: 1020px;
+//   margin: 0 auto;
+//   border-bottom: 1px solid #b5b5b5;
+//
+// }
+//
+// .header__logo {
+//   display: inline-block;
+//   margin: auto;
+//   float: left;
+//   padding-left: 150px;
+//   padding-top: 25px;
+// }
+//
+// .header__phone {
+//   display: inline-block;
+//   margin: auto;
+//   float:right;
+//   text-align: center;
+//   padding-right: 150px;
+//   padding-top: 35px;
+//
+//     a {
+//       text-decoration: none;
+//       color: $text-color;
+//
+//     }
+//
+// }

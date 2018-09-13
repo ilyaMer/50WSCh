@@ -1,0 +1,27 @@
+.header {
+  background: #ffffff; }
+
+.head {
+  padding: 20px 0 23px;
+  border-bottom: 1px solid #c3c3c3;
+  margin: auto; }
+
+.head_logo {
+  padding-left: 100px; }
+
+.header__phone {
+  display: block; }
+
+.phone {
+  text-decoration: none;
+  padding-right: 100px;
+  display: block;
+  color: #000000;
+  font-size: 20px; }
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+/*# sourceMappingURL=pageflexvar.css.map */

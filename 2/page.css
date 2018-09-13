@@ -1,0 +1,27 @@
+.header {
+  height: 110px;
+  color: #ffffff;
+  display: block;
+  width: 1020px;
+  margin: 0 auto;
+  border-bottom: 1px solid #b5b5b5; }
+
+.header__logo {
+  display: inline-block;
+  margin: auto;
+  float: left;
+  padding-left: 150px;
+  padding-top: 25px; }
+
+.header__phone {
+  display: inline-block;
+  margin: auto;
+  float: right;
+  text-align: center;
+  padding-right: 150px;
+  padding-top: 35px; }
+  .header__phone a {
+    text-decoration: none;
+    color: #000000; }
+
+/*# sourceMappingURL=page.css.map */
