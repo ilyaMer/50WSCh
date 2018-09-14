@@ -1,0 +1,28 @@
+$bgcol2: #FBFBFB;
+$btmcol: #0964B4;
+$txtcol: #fff;
+
+.first-screen {
+
+.background-color: $bgcol2;
+text-align: center;
+
+
+.first-screen__content {
+
+  max-width: 720px;
+  margin: auto;
+
+  padding: 10px;
+}
+
+}
+
+.input_button {
+  color: $btmcol;
+  background-color: $btmcol;
+  color: $txtcol;
+  height: 30px;
+  border-radius: 3px;
+
+}

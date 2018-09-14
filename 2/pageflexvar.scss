@@ -3,11 +3,12 @@ $text-color: #000000;
 $main-with: 1020px;
 
 // WARNING: Не решена проблема с перескакивающим блоком. В наименованиях стилей - ад
+// WARNING: Установлен неправильный (серый) цвет в хедере
 
 .header {
 
 
-  background: $bg_col_white;
+  background-color: $bg_col_white;
 
 }
 
@@ -15,6 +16,9 @@ $main-with: 1020px;
   padding: 20px 0 23px;
   border-bottom: 1px solid #c3c3c3;
   margin: auto;
+  background-color: $bg_col_white;
+
+
 
 
 
@@ -48,6 +52,7 @@ $main-with: 1020px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background-color: $bg_col_white;
 }
 
 

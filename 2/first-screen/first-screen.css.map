@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAIA,aAAc;EAEd,iBAAiB,EANR,OAAO;EAOhB,UAAU,EAAE,MAAM;EAGlB,oCAAuB;IAErB,SAAS,EAAE,KAAK;IAChB,MAAM,EAAE,IAAI;IAEZ,OAAO,EAAE,IAAI;;AAKf,aAAc;EACZ,KAAK,EApBE,OAAO;EAqBd,gBAAgB,EArBT,OAAO;EAsBd,KAAK,EArBE,IAAI;EAsBX,MAAM,EAAE,IAAI;EACZ,aAAa,EAAE,GAAG",
+"sources": ["first-screen.scss"],
+"names": [],
+"file": "first-screen.css"
+}

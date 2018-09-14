@@ -1,10 +1,11 @@
 .header {
-  background: #ffffff; }
+  background-color: #ffffff; }
 
 .head {
   padding: 20px 0 23px;
   border-bottom: 1px solid #c3c3c3;
-  margin: auto; }
+  margin: auto;
+  background-color: #ffffff; }
 
 .head_logo {
   padding-left: 100px; }
@@ -22,6 +23,7 @@
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-around; }
+  justify-content: space-around;
+  background-color: #ffffff; }
 
 /*# sourceMappingURL=pageflexvar.css.map */

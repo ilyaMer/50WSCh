@@ -1,0 +1,16 @@
+.first-screen {
+  .background-color: #FBFBFB;
+  text-align: center; }
+  .first-screen .first-screen__content {
+    max-width: 720px;
+    margin: auto;
+    padding: 10px; }
+
+.input_button {
+  color: #0964B4;
+  background-color: #0964B4;
+  color: #fff;
+  height: 30px;
+  border-radius: 3px; }
+
+/*# sourceMappingURL=first-screen.css.map */

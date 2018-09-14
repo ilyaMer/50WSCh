@@ -1,0 +1,27 @@
+$goodcardwidth: 250px;
+$goodcardheight: 450px;
+$goodcardbordercol: #4099C1;
+
+
+.goods-cards_block {
+transform-style: preserve-3d;
+
+}
+
+.good-card {
+  height: $goodcardheight;
+  width: $goodcardwidth;
+  border: 1px solid $goodcardbordercol;
+  transform-style: preserve-3d;
+
+
+}
+
+.good-card:hover {
+  transform-style: preserve-3d;
+  transform: rotate3d(0, 1, 0, 90deg);
+  transition-duration: .5s;
+
+  perspective: none;
+  backface-visibility: hidden;
+}

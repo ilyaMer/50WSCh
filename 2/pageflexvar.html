@@ -1,13 +1,24 @@
+<!-- NOTE: Картинка новостройкин мальенькая -->
+<!-- NOTE: Добавь анимацию -->
+<!-- NOTE: Фон подложки под лого и телефон должен быть белый -->
+<!-- NOTE: Штрифты должны быть более секси (см. Google Fonts) -->
+<!-- NOTE: Привести структуру файлов в соответствие с БЭМ -->
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
     <title>Конференция</title>
     <link rel="stylesheet" href="pageflexvar.css">
+    <link rel="stylesheet" href="/Users/ilyamerzlyakov/Documents/0000 New docs/Web-development-projects/50WSCh/2/first-screen/first-screen.css">
+    <link rel="stylesheet" href="/Users/ilyamerzlyakov/Documents/0000 New docs/Web-development-projects/50WSCh/2/good-card/good-card.css">
   </head>
   <body>
 
+
+<!-- *********************Блок с лого и телефоном******************* -->
 <header class="header">
   <div class="head">
     <nav>
@@ -16,6 +27,85 @@
     </nav>
   </div>
 </header>
+
+
+<!-- **********************************Первый экран****************************** -->
+<div class="first-screen">
+  <div class="first-screen__content">
+    <p>Бесплатный интенсив с 20 по 22 сентября.</p>
+    <h1>Актуальные вопросы правоприменения в области долевого строительства</h1>
+    <p>Цикл из бесплатных вебинаров по долевому строительтсву будет полезен девелоперам, юристам, риелторам и всем кто интересуется
+    вопросами покупки и продажи квартир в новостройках.</p>
+  </div>
+  <a href="#reguster_form"><input type="button" class="input_button" value="Зарегистрироваться"></a>
+  <!-- NOTE: Добавь Анимацию! -->
+</div>
+
+
+<!-- *************************************** Блок с карточками-ебалами********************* -->
+
+<div class="goods-cards_block">
+
+  <div class="good-card">
+    <h1>Темы и спикеры</h1>
+
+
+    <div class="good-card-front">
+      <div class="good-card-front_background">
+      </div>
+
+      <div class="good-card-front_header">
+        Долевое строительство: изменения в законодательстве в 2019 году.
+      </div>
+
+      <div class="good-card-front_text">
+        Петр Федорченко, юрист правового управления Правитесльства Москвы
+      </div>
+
+    </div>
+
+    <div class="good-card-back">
+    </div>
+
+  </div>
+
+
+<!-- *************************************** БЛОК С ФОРМОЙ РЕГИСТРАЦИИ********************* -->
+
+<div class="registration-form_wrapper">
+  <h1>Знания для уверенности!</h1>
+  <p>Регистрируйтесь, чтобы получить досуп ко всем вебинарам</p>
+  <fieldset class="registration-form">
+    <form class="registration-form-form" action="index.html" method="post">
+
+
+    <div class="registration-form-liner">
+      <input type="text" name="" value="Имя и фамилия">
+      <input type="text" name="" value="Телефон">
+      <input type="text" name="" value="Почта">
+
+
+    </div>
+  <div class="registration-form-form_textholder">
+    <input type="text" name="" value="Здесь вы можете рассказать немного о себе: где и кем вы работаете, откуда вы
+    узнали про наш сайт, что бы вы хотели узнать на вебинарах">
+  </div>
+
+    <a href="#reguster_form"><input type="button" class="input_button" value="Зарегистрироваться"></a>
+    <!-- NOTE: Добавь Анимацию! -->
+
+      </form>
+
+  </fieldset>
+
+</div>
+
+
+</div>
+
+
+
+
 
 
     <!-- <div class="header">
