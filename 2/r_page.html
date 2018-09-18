@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style media="screen">
+      * {
+
+        margin: 0;
+
+      }
+      .header {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        align-items: center;
+        flex-wrap: wrap;
+        /* overflow: hidden; */
+        /* min-width: 300px; */
+        border-bottom: .5px solid #6F7174;
+
+      }
+
+
+
+      .phone {
+        /* display: block; */
+        /* min-width: 250px; */
+        /* align-items: center;
+        text-align: center; */
+        font-size: 26px;
+        font-family: sans-serif;
+
+      }
+
+      /* .header {
+        align-items: center;
+        text-align: center;
+      } */
+
+
+
+      .header a {
+        text-decoration: none;
+        color: #6F7174;
+
+      }
+
+      /* ********************Стили первого экрана******************* */
+
+      .header-wrapper {
+       background-color: #fbfbfb;
+
+      }
+
+    .first-screen {
+
+      text-align: center;
+      /* padding: 150px; */
+      max-width: 780px;
+      margin: auto;
+      padding: 140px 0 80px;
+      font-family: sans-serif;
+    }
+
+    .first-screen__content {
+
+    }
+
+    .first-screen__content p {
+
+      line-height: 22px;
+      font-size: 16px;
+      padding: 10px 0;
+    }
+
+    .first-screen__content h1 {
+
+      font-size: 50px;
+      line-height: 70px;
+
+    }
+
+    .fist-screen__wrapper {
+
+      width: auto;
+      background-color: #f2f2f2;
+    }
+
+
+
+
+    /* **************************СТИЛИ КНОПКИ********************* */
+
+    .input_button {
+      background-color: #009801;
+      padding: 10px 20px;
+      margin: 30px auto 65px;
+      font-size: 16px;
+      color: #ffffff;
+      border-radius: 6px;
+    }
+
+    .input_button:hover {
+      background-color: #007c00;
+      padding: 10px 20px;
+      margin: 30px auto 65px;
+      font-size: 16px;
+      color: #ffffff;
+    }
+
+
+    /* ************************** СТИЛИ ФОРМЫ РЕГИСТРАЦИИ********************* */
+    .registration-form_wrapper {
+      text-align: center;
+      border: 1px solid blue;
+      /* background-color: #f2f2f2; */
+
+    }
+
+    .registration-form-form {
+      border: 1px dotted red;
+      max-width: 780px;
+      margin: auto;
+      background-color: #f2f2f2;
+      padding-top: 35px;
+
+    }
+
+
+    .registration-form-form input {
+      font-size: 16px;
+      padding: 12px;
+      border: 3px dotted green;
+      border-radius: 6px;
+      width: 20%
+    }
+
+    .registration-form-liner {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      border: 1px dashed purple;
+      flex-wrap: wrap;
+
+    }
+
+
+
+
+    </style>
+
+  </head>
+  <body>
+    <!-- *****************HEADER********************** -->
+
+    <div class="header-wrapper">
+
+
+    <header class="header">
+          <a href="#" class="head_logo"><img src="media/logo_big.png" alt="Новостройкин" width=250px; height=73px;></a>
+          <a class="phone" href="tel: +7485000721">+7 (485) 5000-721</a>
+    </header>
+
+      </div>
+
+      <!-- **********************************Первый экран****************************** -->
+      <div class="fist-screen__wrapper">
+
+
+      <div class="first-screen">
+        <div class="first-screen__content">
+          <p>Бесплатный интенсив с 20 по 22 сентября.</p>
+          <h1>Актуальные вопросы правоприменения в области долевого строительства</h1>
+          <p>Цикл из бесплатных вебинаров по долевому строительтсву будет полезен девелоперам, юристам, риелторам и всем кто интересуется
+          вопросами покупки и продажи квартир в новостройках.</p>
+        </div>
+        <a href="#reguster_form"><input type="button" class="input_button" value="Зарегистрироваться"></a>
+        <!-- NOTE: Добавь Анимацию! -->
+      </div>
+      </div>
+
+
+
+
+<!--
+      ****************************REGISTRATION FORM******************************** -->
+      <div class="registration-form_wrapper">
+
+
+
+      <h1>Знания для уверенности!</h1>
+      <p>Регистрируйтесь, чтобы получить досуп ко всем вебинарам</p>
+
+      <form class="registration-form-form" action="index.html" method="post">
+
+
+      <div class="registration-form-liner">
+        <input type="text" name="" placeholder="Имя, Фамилия">
+        <input type="text" name="" placeholder="Телефон">
+        <input type="text" name="" placeholder="email">
+
+
+      </div>
+    <div class="registration-form-form_textholder">
+      <input type="text" name="" placeholder="Здесь вы можете рассказать немного о себе: где и кем вы работаете, откуда вы
+      узнали про наш сайт, что бы вы хотели узнать на вебинарах" value=>
+    </div>
+
+      <a href="#reguster_form"><input type="button" class="input_button" value="Зарегистрироваться"></a>
+
+      <p>Нажимая кнопку "Зарегистрироваться", вы выражаете согасие на обратботку персональных данных и получаете доступ ко всем вебинарам цикла</p>
+      <!-- NOTE: Добавь Анимацию! -->
+
+        </form>
+
+        </div>
+
+
+
+
+  </body>
+</html>

@@ -3,6 +3,9 @@
 <!-- NOTE: Фон подложки под лого и телефон должен быть белый -->
 <!-- NOTE: Штрифты должны быть более секси (см. Google Fonts) -->
 <!-- NOTE: Привести структуру файлов в соответствие с БЭМ -->
+<!-- NOTE: Короче свистелки-перделки пока не работают почти все, т.к. надо срочно делать PHP и JS -->
+<!-- NOTE: Перед футором въебашить красивую линию -->
+<!-- NOTE: Не забудть экранировать возможные html/CSS -->
 
 <!DOCTYPE html>
 <html>
@@ -14,8 +17,13 @@
     <link rel="stylesheet" href="pageflexvar.css">
     <link rel="stylesheet" href="/Users/ilyamerzlyakov/Documents/0000 New docs/Web-development-projects/50WSCh/2/first-screen/first-screen.css">
     <link rel="stylesheet" href="/Users/ilyamerzlyakov/Documents/0000 New docs/Web-development-projects/50WSCh/2/good-card/good-card.css">
+    <link rel="stylesheet" href="partners.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
   </head>
   <body>
+
 
 
 <!-- *********************Блок с лого и телефоном******************* -->
@@ -104,6 +112,71 @@
 </div>
 
 
+
+<!-- *************************************** БЛОК С НАШИ ПАРТНЕРЫ********************* -->
+
+<div class="partners">
+  <div class="partners__header">
+    <h3>Наши партнеры</h3>
+    <div class="partners__logo-row">
+      <div class="partners__logo-item">
+        <a href="#"><img src="media/logo_mos_government.png" alt="Правительство Москвы"></a>
+      </div>
+
+      <div class="partners__logo-item">
+        <a href="#"><img src="media/logo_tpp.png" alt="Торгово-Промышленная Палата РФ"></a>
+      </div>
+      <div class="partners__logo-item">
+        <a href="#"><img src="media/logo_gbu_mb.png" alt="ГБУ Малый бизнес Москвы"></a>
+      </div>
+
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- *************************************** ФУТЕР ********************* -->
+
+<footer class="footer">
+
+
+ <div class="footer_column">
+   <img src="media/logo.png" alt="Новостройкин"></a>
+   <a class="phone" href="tel: +7485000721">+7 (485) 5000-721</a>
+   <a href="#reguster_form"><input type="button" class="input_button" value="Свяжитесь с нами!"></a>
+
+ </div>
+
+ <div class="footer_column">
+   <a href="#">О компании</a>
+   <a href="#">Новости</a>
+   <a href="#">Блог</a>
+   <address class="adress">
+     Наш адрес: м.Москва, ул.Газгольдерная <br>
+     дом 35 офис 24
+   </address>
+
+
+ </div>
+
+ <div class="footer_column">
+<a href="#"><i class="fab fa-facebook"></i></a>
+<a href="#"><i class="fab fa-twitter-square"></i></a>
+<a href="#"><i class="fab fa-vk"></i></a>
+<p>&copy; Агенство по всякой хуйне.</p>
+
+
+
+
+
+ </div>
+
+
+
+
+</footer>
 
 
 

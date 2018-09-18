@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAEA,iDAAiD;AACjD,0BAA2B;EACzB,KAAK,EAAE,KAAK;EACZ,gBAAgB,EAAE,IAAI;;AAGxB,kBAAmB;EACjB,KAAK,EAAE,KAAK;EACZ,gBAAgB,EAAE,IAAI",
+"mappings": "AAEA,iDAAiD;AACjD,0BAA2B;EACzB,KAAK,EAAE,KAAK;EACZ,gBAAgB,EAAE,IAAI",
 "sources": ["registration-form.scss"],
 "names": [],
 "file": "registration-form.css"
