@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAKA,kBAAmB;EACnB,eAAe,EAAE,WAAW;;AAI5B,UAAW;EACT,MAAM,EAVS,KAAK;EAWpB,KAAK,EAZS,KAAK;EAanB,MAAM,EAAE,iBAA4B;EACpC,eAAe,EAAE,WAAW;;AAK9B,gBAAiB;EACf,eAAe,EAAE,WAAW;EAC5B,SAAS,EAAE,wBAAwB;EACnC,mBAAmB,EAAE,GAAG;EAExB,WAAW,EAAE,IAAI;EACjB,mBAAmB,EAAE,MAAM",
-"sources": ["good-card.scss"],
-"names": [],
-"file": "good-card.css"
-}

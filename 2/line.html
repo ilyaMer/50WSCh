@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<!-- NOTE: Не удалось написать "наш адерс в футере не курсивом и при этом не выровнять его не по центру" -->
+<!-- NOTE: Выровнять ширины формы для регистрации, топ-блока (ширина лого и телефона вместе должна соотвтетствовать ширине формы
+и других блоков.) -->
+<!-- NOTE: В фотошопе сделать изображения "наши партнеры" черно-белыми и добавить hover подмену изображений на цветные -->
+<!-- NOTE: Загрузить более крутые шрифты -->
+<!-- NOTE: Ссылки с кнопки "зарегистрироваться должны вести в правильные места." -->
+<!-- NOTE: у футера дб серый фон -->
+<!-- NOTE: Между футером и партнерами дб красивая цветная линия -->
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> -->
+
+    <title></title>
+
+    <?php include "db/connect.php";?>
+
+    <style media="screen">
+      * {
+
+        margin: 0;
+
+      }
+      .header {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        align-items: center;
+        flex-wrap: wrap;
+        /* overflow: hidden; */
+        /* min-width: 300px; */
+        border-bottom: .5px solid #6F7174;
+        background-color: #FFFFFF;
+
+      }
+
+
+
+      .phone {
+        /* display: block; */
+        /* min-width: 250px; */
+        /* align-items: center;
+        text-align: center; */
+        font-size: 26px;
+        font-family: sans-serif;
+
+      }
+
+      /* .header {
+        align-items: center;
+        text-align: center;
+      } */
+
+
+
+      .header a {
+        text-decoration: none;
+        color: #6F7174;
+
+      }
+
+      /* ********************Стили первого экрана******************* */
+
+      .header-wrapper {
+       background-color: #fbfbfb;
+
+      }
+
+    .first-screen {
+
+      text-align: center;
+      /* padding: 150px; */
+      max-width: 780px;
+      margin: auto;
+      padding: 140px 0 80px;
+      font-family: sans-serif;
+    }
+
+    .first-screen__content {
+
+    }
+
+    .first-screen__content p {
+
+      line-height: 22px;
+      font-size: 16px;
+      padding: 10px 0;
+    }
+
+    .first-screen__content h1 {
+
+      font-size: 50px;
+      line-height: 70px;
+
+    }
+
+    .fist-screen__wrapper {
+
+      width: auto;
+      background-color: #f2f2f2;
+    }
+
+
+
+
+    /* **************************СТИЛИ КНОПКИ********************* */
+
+    .input_button {
+      background-color: #009801;
+      padding: 10px 20px;
+      margin: 30px auto 65px;
+      font-size: 16px;
+      color: #ffffff;
+      border-radius: 6px;
+    }
+
+    .input_button:hover {
+      background-color: #007c00;
+      padding: 10px 20px;
+      margin: 30px auto 65px;
+      font-size: 16px;
+      color: #ffffff;
+    }
+
+
+    /* ************************** СТИЛИ ФОРМЫ РЕГИСТРАЦИИ********************* */
+    .registration-form_wrapper {
+      text-align: center;
+      padding-top: 40px;
+      /* border: 1px solid blue; */
+      /* background-color: #f2f2f2; */
+
+    }
+
+    .registration-form-form {
+      /* border: 1px dotted red; */
+      max-width: 780px;
+      margin: 30px auto;
+      background-color: #f2f2f2;
+      padding-top: 35px;
+
+
+    }
+
+
+    .registration-form-form input:not(.input_button){
+      font-size: 16px;
+      padding: 12px;
+      border: 1px solid #CECECE;
+      border-radius: 6px;
+      width: 20%;
+      min-width: 157px;
+
+    }
+
+    .registration-form-liner {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+      /* border: 1px dashed purple; */
+      flex-wrap: wrap;
+      width: 90%;
+
+    }
+
+    .textarea {
+      border-radius: 6px;
+      font-size: 16px;
+      width:89%;
+      height: 128px;
+      margin-top: 5px;
+      border: 1px solid #CECECE;
+      min-width: 157px;
+      /* align-content: left; */
+      padding: 12px;
+      overflow: auto;
+      /* display: flex;
+      justify-content: space-around; */
+    }
+
+    form p {
+      text-align: left;
+      font-size: 16px;
+    }
+
+    /* <!-- *****************СТИЛИ ДЛЯ БЛОКА "ПАРТНЕРЫ"********************** --> */
+    /* .partners, */
+    .partners__logo-row {
+
+      display: flex;
+      justify-content: space-around;
+      max-width: 957px;
+      /* border: 1px dashed red; */
+      flex-wrap: wrap;
+      text-align: center;
+      margin: auto;
+
+
+    }
+
+    .partners__header {
+      text-align: center;
+      display: block;
+      padding-bottom: 20px;
+
+    }
+
+    /* <!-- *****************СТИЛИ ДЛЯ ЛИНИИ********************** --> */
+    .line {
+      display: flex;
+      height: 3px;
+      width: 100%;
+      padding: 30px 0 30px;
+    }
+
+    .line__one {
+      background-color: #149718;
+      width: 25%;
+    }
+
+    .line__two {
+      background-color: #FEC32D;
+      width: 25%;
+    }
+
+    .line__three {
+      background-color: #F86620;
+      width: 25%;
+    }
+
+    .line__four {
+      background-color: #79ACFC;
+        width: 25%;
+    }
+
+
+      /* <!-- *****************СТИЛИ ДЛЯ ФУТЕРА********************** --> */
+
+      .footer {
+        display: flex;
+        justify-content: space-around;
+        max-width: 780px;
+        margin: auto;
+        flex-wrap: wrap;
+        /* align-content: left;
+        overflow: auto; */
+
+
+
+
+      }
+
+      .footer_column {
+        /* border: 1px dashed purple; */
+        text-align: center;
+        width: 30%;
+        min-width: 250px;
+        /* border: 1px solid red; */
+
+      }
+
+      .footer_column a {
+        text-decoration: underline;
+        font-size: 14px;
+        color: black;
+      }
+
+      .footer_column a:hover {
+        text-decoration: none;
+        font-size: 14px;
+        color: black;
+      }
+
+    .phone a {
+        text-decoration: none;
+      }
+
+
+
+
+      /* a {
+        list-style: none;
+          text-decoration: underline;
+      } */
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+
+      }
+
+      /* ul a:hover {
+        list-style: none;
+          text-decoration: none;
+      } */
+
+      .list-of-links,
+      .address
+       {
+
+
+        text-align: left;
+        margin-left: 0;
+      }
+
+      .footer_column_social {
+        display: flex;
+        margin: 5px;
+        /* justify-content: space-between; */
+        margin-left: 30px;
+
+      }
+
+      .footer_column_social a {
+        /* border: 1px solid red; */
+        background-color: #007C00;
+        color: #FFF;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        font-size: 25px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 3px;
+
+      }
+
+      .footer_column_social a:last-of-type {
+        /* border: 1px solid green; */
+        background-color: #007C00;
+        color:#FFF;
+
+
+      }
+
+    form p {
+        text-align: left;
+        font-size: 14px;
+        /* border: 1px solid yellow; */
+        color: #757580;
+        padding: 0 10px 10px;
+
+      }
+
+
+
+
+
+
+
+
+    </style>
+
+  </head>
+  <body>
+    <!-- *****************HEADER********************** -->
+
+    <div class="header-wrapper">
+
+
+    <header class="header">
+          <a href="#" class="head_logo"><img src="media/logo_big.png" alt="Новостройкин" width=250px; height=73px;></a>
+          <a class="phone" href="tel: +7485000721">+7 (485) 5000-721</a>
+    </header>
+
+      </div>
+
+      <!-- **********************************Первый экран****************************** -->
+      <div class="fist-screen__wrapper">
+
+
+      <div class="first-screen">
+        <div class="first-screen__content">
+          <p>Бесплатный интенсив с 20 по 22 сентября.</p>
+          <h1>Актуальные вопросы правоприменения в области долевого строительства</h1>
+          <p>Цикл из бесплатных вебинаров по долевому строительтсву будет полезен девелоперам, юристам, риелторам и всем кто интересуется
+          вопросами покупки и продажи квартир в новостройках.</p>
+        </div>
+        <a href="#reguster_form"><input type="button" class="input_button" value="Зарегистрироваться"></a>
+        <!-- NOTE: Добавь Анимацию! -->
+      </div>
+      </div>
+
+
+
+
+<!--
+      ****************************REGISTRATION FORM******************************** -->
+      <div class="registration-form_wrapper">
+      <h1>Знания для уверенности!</h1>
+      <p>Регистрируйтесь, чтобы получить досуп ко всем вебинарам</p>
+
+      <form class="registration-form-form" action="insert.php" method="post">
+      <div class="registration-form-liner">
+        <input type="text" name="name" placeholder="Имя, Фамилия">
+        <input type="text" name="phone" placeholder="Телефон">
+        <input type="text" name="email" placeholder="email">
+        <textarea class="textarea" name="message" placeholder="Здесь вы можете рассказать немного о себе: где и кем вы работаете, откуда вы узнали про наш сайт, что бы вы хотели узнать на вебинарах"></textarea>
+      </div>
+    <div class="registration-form-form_textholder">
+
+    </div>
+
+      <a href="#reguster_form"><input type="submit" class="input_button" value="Зарегистрироваться"></a>
+
+      <p>Нажимая кнопку "Зарегистрироваться", вы выражаете согасие на обратботку персональных данных и получаете доступ ко всем вебинарам цикла</p>
+      <!-- NOTE: Добавь Анимацию! -->
+
+        </form>
+
+        </div>
+
+        <!-- *************************************** БЛОК "НАШИ ПАРТНЕРЫ" ********************* -->
+        <div class="partners">
+          <div class="partners__header">
+            <h1>Наши партнеры</h1>
+              </div>
+            <div class="partners__logo-row">
+              <div class="partners__logo-item">
+                <a href="#"><img src="media/logo_mos_government.png" alt="Правительство Москвы"></a>
+              </div>
+
+              <div class="partners__logo-item">
+                <a href="#"><img src="media/logo_tpp.png" alt="Торгово-Промышленная Палата РФ"></a>
+              </div>
+              <div class="partners__logo-item">
+                <a href="#"><img src="media/logo_gbu_mb.png" alt="ГБУ Малый бизнес Москвы"></a>
+              </div>
+
+
+            </div>
+
+
+
+        </div>
+
+        <!-- *************************************** ЛИНИЯ ********************* -->
+
+
+        <div class="line">
+          <div class="line__one">
+          </div>
+          <div class="line__two">
+          </div>
+          <div class="line__three">
+          </div>
+          <div class="line__four">
+          </div>
+        </div>
+
+
+        <!-- *************************************** ФУТЕР ********************* -->
+
+        <footer class="footer">
+
+
+         <div class="footer_column">
+           <p><img src="media/logo.png" alt="Новостройкин"></a></p>
+           <p><a class="phone" style="text-decoration:none;" href="tel: +7485000721">+7 (485) 5000-721</a></p>
+           <p><a href="#reguster_form"><input type="button" class="input_button" value="Свяжитесь с нами!"></a></p>
+         </div>
+
+         <div class="footer_column">
+
+           <ul class="list-of-links">
+             <li><a class="forum_comlumn-footer-links" href="#">О компании</a></li>
+             <li><a class="forum_comlumn-footer-links" href="#">Новости</a></li>
+             <li><a class="forum_comlumn-footer-links" href="#">Блог</a></li>
+           </ul><br>
+
+
+           <address class="address">
+          <span>Наш адрес</span>    г.Москва, ул.Газгольдерная <br>
+             дом 35 офис 24
+           </address>
+
+
+         </div>
+         <div class="footer_column">
+           <div class="footer_column_social">
+
+
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-vk"></i></a>
+
+      </div><br>
+        <p>&copy; Интернет - портал "Новостройкин.ру"</p>
+         </div>
+
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
+
+
+
+  </body>
+</html>
