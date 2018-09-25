@@ -1,0 +1,249 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+
+    <style media="screen">
+      * {
+
+        margin: 0;
+
+      }
+
+
+      /* ********************Стили HEADER******************* */
+      .header {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        align-items: center;
+        flex-wrap: wrap;
+        /* overflow: hidden; */
+        /* min-width: 300px; */
+        border-bottom: .5px solid #6F7174;
+        background-color: #FFFFFF;
+
+      }
+
+
+
+      .phone {
+        /* display: block; */
+        /* min-width: 250px; */
+        /* align-items: center;
+        text-align: center; */
+        font-size: 26px;
+        font-family: sans-serif;
+
+      }
+
+      /* .header {
+        align-items: center;
+        text-align: center;
+      } */
+
+
+
+      .header a {
+        text-decoration: none;
+        color: #6F7174;
+
+      }
+
+
+    /* ********************Стили первого экрана******************* */
+
+    .header-wrapper {
+     background-color: #fbfbfb;
+     /* z-index: 4002; */
+
+    }
+
+    .first-screen {
+
+    text-align: center;
+    /* padding: 150px; */
+    max-width: 780px;
+    margin: auto;
+    padding: 140px 0 80px;
+    font-family: sans-serif;
+    }
+
+    .first-screen__content {
+
+    }
+
+    .first-screen__content p {
+
+    line-height: 22px;
+    font-size: 16px;
+    padding: 10px 0;
+    }
+
+    .first-screen__content h1 {
+
+    font-size: 50px;
+    line-height: 70px;
+
+    }
+
+    .fist-screen__wrapper {
+
+    width: auto;
+    background-color: #f2f2f2;
+    }
+
+        /* ********************Стили кнопки******************* */
+
+
+
+    .input_button {
+      background-color: #009801;
+      padding: 10px 20px;
+      margin: 30px auto 65px;
+      font-size: 16px;
+      color: #ffffff;
+      border-radius: 6px;
+    }
+
+    .input_button:hover {
+      background-color: #007c00;
+      padding: 10px 20px;
+      margin: 30px auto 65px;
+      font-size: 16px;
+      color: #ffffff;
+    }
+
+
+  /* ********************Стили для кубиков/анимации******************* */
+
+  .cubic_fall_down {
+    height: 200px;
+    width: 200px;
+    border: 1px solid red;
+    transform: rotateZ(45deg) translateY(50px);
+    position: relative;
+    /* position: absolute;
+    top: 25px;
+    left: 100px; */
+    /* z-index: 4001;
+    overflow: hidden; */
+    /* transform: translate(0, 50px); */
+
+  }
+
+  /* .cubic_fall_down:hover {
+    height: 200px;
+    width: 200px;
+    border: 1px solid green; */
+    /* transform: rotateZ(45deg); */
+    /* transform: translateY(100px); */
+    /* position: absolute;
+    top: 25px;
+    left: 100px; */
+    /* z-index: 4001;
+    overflow: hidden; */
+    /* transform: translate(0, 50px;); */
+
+  }
+
+
+  /* .cubic_grown.first {
+    height: 200px;
+    width: 200px;
+    border: 1px solid red;
+    transform: rotateZ(45deg);
+    position: relative;
+    top: 100px;
+    left: 100px;
+
+  } */
+
+ .wrapper-for-transform
+ {
+   height: 5000px
+ }
+
+ .cubic_grown.first {
+   width: 100px;
+   height: 100px;
+   border: 1px solid black;
+   transition-delay: 3s;
+   transform: rotate(45deg) scale(1.5);
+   transition-duration: 3s;
+   transition-property: 
+
+
+
+ }
+
+
+    </style>
+  </head>
+  <body>
+
+    <!-- *****************HEADER********************** -->
+    <div class="wrapper-for-transform">
+
+
+
+    <div class="header-wrapper">
+
+
+    <header class="header">
+          <a href="#" class="head_logo"><img src="media/logo_big.png" alt="Новостройкин" width=250px; height=73px;></a>
+          <a class="phone" href="tel: +7485000721">+7 (485) 5000-721</a>
+    </header>
+
+      </div>
+
+
+
+
+
+      <!-- *****************КУБИКИ********************** -->
+
+
+
+
+
+    <div class="cubic_grown first">
+    </div>
+
+    <div class="cubic_grown second">
+    </div>
+
+    <div class="cubic_grown third">
+    </div>
+
+
+
+    <div class="fist-screen__wrapper">
+
+
+    <div class="first-screen">
+      <div class="first-screen__content">
+        <p>Бесплатный интенсив с 20 по 22 сентября.</p>
+        <h1>Актуальные вопросы правоприменения в области долевого строительства</h1>
+        <p>Цикл из бесплатных вебинаров по долевому строительтсву будет полезен девелоперам, юристам, риелторам и всем кто интересуется
+        вопросами покупки и продажи квартир в новостройках.</p>
+      </div>
+      <a href="#reguster_form"><input type="button" class="input_button" value="Зарегистрироваться"></a>
+    </div>
+    </div>
+
+    <div class="cubic_fall_down">
+      cubic_fall_down
+    </div>
+      </div>
+
+      <div class="cubic_grown first">
+      </div>
+
+  </body>
+</html>

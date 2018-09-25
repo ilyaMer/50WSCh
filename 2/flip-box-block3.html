@@ -10,7 +10,7 @@
     <style>
 
     .flip-card-container {
-      background: green;
+      /* background: green; */
       position: relative;
       height: 540px;
       width: 305px;
@@ -25,6 +25,7 @@
       height: 100%;
       transform-style: preserve-3d;
       transition: all .6s ease;
+
       /* background: yellow; */
 
     }
@@ -71,6 +72,7 @@
       justify-content: space-around;
       /* flex-direction: row; */
       flex-wrap: wrap;
+      margin: auto;
 
 
     }
@@ -93,25 +95,25 @@
       justify-content: space-between;
       /* padding: 14px; */
       color: white;
-      border: 4px dotted purple;
+      /* border: 4px dotted purple; */
 
 
     }
 
     .flip-card__header {
-      border: 1px solid red;
+      /* border: 1px solid red; */
       padding: 10px;
       line-height:
     }
 
     .flip-card__text {
-      border: 1px solid red;
+      /* border: 1px solid red; */
       padding: 10px;
     }
 
     .flip-card-back__content:hover {
       color: white;
-      border: 3px dashed black;
+      /* border: 3px dashed black; */
     }
 
     .wraper_all {
@@ -124,14 +126,39 @@
     }
 
     .flip-card__back-head-text {
-      border: 1px dotted white;
+      /* border: 1px dotted white; */
       padding: 10px;
 
     }
 
     .flip-card__back-list-of-items {
-      border: 1px dashed white;
+      /* border: 1px dashed white; */
       padding: 10px;
+    }
+
+    .flip-card__front.flip-card_one {
+      background: url(media/barackobama.png) no-repeat center center;
+      /* border: 3px solid red; */
+      /* background-size: cover; */
+      /* max-width: 100%;
+      max-height: 100%; */
+      background-size: cover;
+
+    }
+
+    .flip-card__front.flip-card_two {
+      background: url(media/person.jpg) no-repeat center center;
+      /* border: 3px solid red; */
+      /* background-size: cover; */
+      /* max-width: 100%;
+      max-height: 100%; */
+      background-size: cover;
+
+    }
+
+    .flip-card-header {
+      display: flex;
+      justify-content: center;
     }
 
 
@@ -140,7 +167,14 @@
 
   </head>
   <body>
+
+
+<h1 class="flip-card-header">Программа вебинаров</h1>
+
     <div class="wraper_all">
+
+
+
 
 
 
@@ -213,7 +247,7 @@
 
           <div class="flip-card-container">
             <div class="flip-card-wrapper">
-              <div class="flip-card__front flip-card_three">
+              <div class="flip-card__front flip-card_one">
                 <div class="flip-card__content">
                   <div class="flip-card__header">
                     <h3>Измениния в законодательстве с июня 2018 года: результаты первых 3х месяцев работы законопроекта</h3>
@@ -244,10 +278,9 @@
               </div>
             </div>
 
-
             <div class="flip-card-container">
               <div class="flip-card-wrapper">
-                <div class="flip-card__front flip-card_four">
+                <div class="flip-card__front flip-card_two">
                   <div class="flip-card__content">
                     <div class="flip-card__header">
                       <h3>Измениния в законодательстве с июня 2018 года: результаты первых 3х месяцев работы законопроекта</h3>
@@ -281,7 +314,7 @@
 
               <div class="flip-card-container">
                 <div class="flip-card-wrapper">
-                  <div class="flip-card__front flip-card_five">
+                  <div class="flip-card__front flip-card_one">
                     <div class="flip-card__content">
                       <div class="flip-card__header">
                         <h3>Измениния в законодательстве с июня 2018 года: результаты первых 3х месяцев работы законопроекта</h3>
@@ -314,7 +347,7 @@
 
                 <div class="flip-card-container">
                   <div class="flip-card-wrapper">
-                    <div class="flip-card__front flip-card_six">
+                    <div class="flip-card__front flip-card_two">
                       <div class="flip-card__content">
                         <div class="flip-card__header">
                           <h3>Измениния в законодательстве с июня 2018 года: результаты первых 3х месяцев работы законопроекта</h3>

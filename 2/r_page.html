@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<!-- NOTE: Не удалось написать "наш адерс в футере не курсивом и при этом не выровнять его не по центру" -->
-<!-- NOTE: Выровнять ширины формы для регистрации, топ-блока (ширина лого и телефона вместе должна соотвтетствовать ширине формы
+<!-- NOTE: Выровнять ширины формы для регистрации, топ-блока, футера (ширина лого и телефона вместе должна соотвтетствовать ширине формы
 и других блоков.) -->
 <!-- NOTE: В фотошопе сделать изображения "наши партнеры" черно-белыми и добавить hover подмену изображений на цветные -->
 <!-- NOTE: Загрузить более крутые шрифты -->
-<!-- NOTE: Ссылки с кнопки "зарегистрироваться должны вести в правильные места." -->
-<!-- NOTE: у футера дб серый фон -->
-<!-- NOTE: Между футером и партнерами дб красивая цветная линия -->
+<!-- NOTE: у футера дб серый фон В этом случае появляется сразу несколько проблем, главная из которых то что логотип это картинка с белым фоном-->
+<!-- NOTE: Подобрать фотки для переворачивающисхся блоков, стилизовать красиво весь контент -->
+<!-- NOTE: Если подергивания не исчезли - решить проблему подергиваний -->
+<!-- NOTE: Выровнять красиво футер -->
+<!-- NOTE: Вычистить код от закоменченых тегов -->
+<!-- NOTE: Привести все в соответствие с БЭМ -->
+<!-- NOTE: Развернуть на сервере и выложить в open-sourse -->
+<!-- NOTE: Добавить скрипт чтобы на мелком экране переворачивались по тачу -->
+<!-- NOTE: Добавить префиксы и использовать префиксер -->
+<!-- NOTE: Наши партнеры - подобрать размеры логотипов так, чтобы они смотрелись во всех смыслах на одной линии -->
+<!-- NOTE: Смотрим на всех размерах  -->
 
 <html lang="en" dir="ltr">
   <head>
@@ -58,6 +65,163 @@
         color: #6F7174;
 
       }
+
+
+        /* ********************Стили КАРТОЧЕК******************* */
+
+        .flip-card-container {
+          /* background: green; */
+          position: relative;
+          height: 540px;
+          width: 305px;
+          perspective: 1000px;
+          margin: 10px;
+
+        }
+
+        .flip-card-wrapper {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          transform-style: preserve-3d;
+          transition: all .6s ease;
+
+          /* background: yellow; */
+
+        }
+
+        .flip-card-wrapper:hover {
+          transform: rotateY(180deg);
+        }
+
+        .flip-card__front {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: blue;
+          backface-visibility: hidden;
+
+        }
+
+        .flip-card__back {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: red;
+          backface-visibility: hidden;
+          transform: rotateY(180deg);
+          color: white;
+          display: flex;
+          flex-direction: column;
+          /* border: 3px solid purple; */
+          height: inherit;
+          display: flex;
+          flex-direction: column;
+          /* justify-content: space-between; */
+          /* padding: 14px; */
+        }
+
+
+
+
+
+
+        .wraper_all {
+
+          display: flex;
+          justify-content: space-around;
+          /* flex-direction: row; */
+          flex-wrap: wrap;
+          margin: auto;
+
+
+        }
+
+        .flip-card__content
+
+         {
+          /* position: absolute;
+          top: 0px;
+          left: 0px; */
+          /* backface-visibility: hidden;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between; */
+          /* margin-bottom: 30px; */
+          /* border: 3px solid yellow; */
+          height: inherit;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          /* padding: 14px; */
+          color: white;
+          /* border: 4px dotted purple; */
+
+
+        }
+
+        .flip-card__header {
+          /* border: 1px solid red; */
+          padding: 10px;
+          line-height:
+        }
+
+        .flip-card__text {
+          /* border: 1px solid red; */
+          padding: 10px;
+        }
+
+        .flip-card-back__content:hover {
+          color: white;
+          /* border: 3px dashed black; */
+        }
+
+        .wraper_all {
+          max-width: 1000px;
+          margin: auto;
+        }
+
+        .flip-card-back__content {
+          /* padding: 20px; */
+        }
+
+        .flip-card__back-head-text {
+          /* border: 1px dotted white; */
+          padding: 10px;
+
+        }
+
+        .flip-card__back-list-of-items {
+          /* border: 1px dashed white; */
+          padding: 10px;
+        }
+
+        .flip-card__front.flip-card_one {
+          background: url(media/barackobama.png) no-repeat center center;
+          /* border: 3px solid red; */
+          /* background-size: cover; */
+          /* max-width: 100%;
+          max-height: 100%; */
+          background-size: cover;
+
+        }
+
+        .flip-card__front.flip-card_two {
+          background: url(media/person.jpg) no-repeat center center;
+          /* border: 3px solid red; */
+          /* background-size: cover; */
+          /* max-width: 100%;
+          max-height: 100%; */
+          background-size: cover;
+
+        }
+
+        .flip-card-header {
+          display: flex;
+          justify-content: center;
+          margin: 30px auto 20px;
+        }
+
 
       /* ********************Стили первого экрана******************* */
 
@@ -205,6 +369,37 @@
 
     }
 
+    /* <!-- *****************СТИЛИ ДЛЯ ЛИНИИ********************** --> */
+
+
+
+    .line {
+      display: flex;
+      height: 3px;
+      width: 100%;
+      padding: 30px 0 30px;
+    }
+
+    .line__one {
+      background-color: #149718;
+      width: 25%;
+    }
+
+    .line__two {
+      background-color: #FEC32D;
+      width: 25%;
+    }
+
+    .line__three {
+      background-color: #F86620;
+      width: 25%;
+    }
+
+    .line__four {
+      background-color: #79ACFC;
+        width: 25%;
+    }
+
 
       /* <!-- *****************СТИЛИ ДЛЯ ФУТЕРА********************** --> */
 
@@ -214,17 +409,26 @@
         max-width: 780px;
         margin: auto;
         flex-wrap: wrap;
+        /* border-top: 1px solid purple; */
         /* align-content: left;
         overflow: auto; */
-        
+        /* background-color: #F2F2F2; */
+
 
 
 
       }
 
+      .footer_column:nth-of-type(1)
+      {
+        /* border: 1px solid blue; */
+        margin-top: -10px;
+        /* Это временная заплатка, до тех пор, пока не заменим картинку на текст */
+      }
+
       .footer_column {
         /* border: 1px dashed purple; */
-        text-align: center;
+        text-align: left;
         width: 30%;
         min-width: 250px;
         /* border: 1px solid red; */
@@ -268,6 +472,10 @@
           text-decoration: none;
       } */
 
+      .list-of-links {
+        margin-top: -4px;
+      }
+
       .list-of-links,
       .address
        {
@@ -275,13 +483,14 @@
 
         text-align: left;
         margin-left: 0;
+        font-style: normal;
       }
 
       .footer_column_social {
         display: flex;
-        margin: 5px;
+        /* margin: 5px; */
         /* justify-content: space-between; */
-        margin-left: 30px;
+        /* margin-left: 0px; */
 
       }
 
@@ -296,7 +505,8 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          margin: 3px;
+          margin-right: 3px;
+
 
       }
 
@@ -351,21 +561,251 @@
           <p>Цикл из бесплатных вебинаров по долевому строительтсву будет полезен девелоперам, юристам, риелторам и всем кто интересуется
           вопросами покупки и продажи квартир в новостройках.</p>
         </div>
-        <a href="#reguster_form"><input type="button" class="input_button" value="Зарегистрироваться"></a>
+        <a href="#F"><input type="button" class="input_button" value="Зарегистрироваться"></a>
         <!-- NOTE: Добавь Анимацию! -->
       </div>
       </div>
+
+
+      <!-- **********************************FLIP-CARDS****************************** -->
+
+      <h1 class="flip-card-header">Программа вебинаров</h1>
+
+          <div class="wraper_all">
+
+
+
+
+
+
+
+            <div class="flip-card-container">
+              <div class="flip-card-wrapper">
+                <div class="flip-card__front flip-card_one">
+                  <div class="flip-card__content">
+                    <div class="flip-card__header">
+                      <h3>Измениния в законодательстве с июня 2018 года: результаты первых 3х месяцев работы законопроекта</h3>
+                    </div>
+                    <div class="flip-card__text">
+                        <p>Игорь Иванов, руководитель юридического отдела компании "ЖСК Проспект"<br>15 мая, 17.00-18.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flip-card__back">
+                  <div class="flip-card-back__content">
+                  <div class="flip-card__back-head-text">
+                    <h3>Измениния в законодательстве с июня 2018 года: результаты первых 3х месяцев работы законопроекта</h3>
+                    <p>Игорь Иванов, руководитель юридического отдела компании "ЖСК Проспект"<br>15 мая, 17.00-18.</p>
+                </div>
+                <div class="flip-card__back-list-of-items">
+                  <ul>
+                    <li>Новый закон: первые итоги</li>
+                    <li>Практика использования эскроу-счетов</li>
+                    <li>Новые подходы к фондированию строительства</li>
+                    <li>Изменения в процедуре регистрации договоров</li>
+                    <li>Дальнейшие изменения в законодательстве</li>
+                  </ul>
+                  </div>
+                </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-card-container">
+                <div class="flip-card-wrapper">
+                  <div class="flip-card__front flip-card_two">
+                    <div class="flip-card__content">
+                      <div class="flip-card__header">
+                        <h3>Измениния в законодательстве с июня 2018 года: результаты первых 3х месяцев работы законопроекта</h3>
+                      </div>
+                      <div class="flip-card__text">
+                          <p>Игорь Иванов, руководитель юридического отдела компании "ЖСК Проспект"<br>15 мая, 17.00-18.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flip-card__back">
+                    <div class="flip-card-back__content">
+                    <div class="flip-card__back-head-text">
+                      <h3>Измениния в законодательстве с июня 2018 года: результаты первых 3х месяцев работы законопроекта</h3>
+                      <p>Игорь Иванов, руководитель юридического отдела компании "ЖСК Проспект"<br>15 мая, 17.00-18.</p>
+                  </div>
+                  <div class="flip-card__back-list-of-items">
+                    <ul>
+                      <li>Новый закон: первые итоги</li>
+                      <li>Практика использования эскроу-счетов</li>
+                      <li>Новые подходы к фондированию строительства</li>
+                      <li>Изменения в процедуре регистрации договоров</li>
+                      <li>Дальнейшие изменения в законодательстве</li>
+                    </ul>
+                    </div>
+                  </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flip-card-container">
+                  <div class="flip-card-wrapper">
+                    <div class="flip-card__front flip-card_one">
+                      <div class="flip-card__content">
+                        <div class="flip-card__header">
+                          <h3>Измениния в законодательстве с июня 2018 года: результаты первых 3х месяцев работы законопроекта</h3>
+                        </div>
+                        <div class="flip-card__text">
+                            <p>Игорь Иванов, руководитель юридического отдела компании "ЖСК Проспект"<br>15 мая, 17.00-18.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="flip-card__back">
+                      <div class="flip-card-back__content">
+                      <div class="flip-card__back-head-text">
+                        <h3>Измениния в законодательстве с июня 2018 года: результаты первых 3х месяцев работы законопроекта</h3>
+                        <p>Игорь Иванов, руководитель юридического отдела компании "ЖСК Проспект"<br>15 мая, 17.00-18.</p>
+                    </div>
+                    <div class="flip-card__back-list-of-items">
+                      <ul>
+                        <li>Новый закон: первые итоги</li>
+                        <li>Практика использования эскроу-счетов</li>
+                        <li>Новые подходы к фондированию строительства</li>
+                        <li>Изменения в процедуре регистрации договоров</li>
+                        <li>Дальнейшие изменения в законодательстве</li>
+                      </ul>
+                      </div>
+                    </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flip-card-container">
+                    <div class="flip-card-wrapper">
+                      <div class="flip-card__front flip-card_two">
+                        <div class="flip-card__content">
+                          <div class="flip-card__header">
+                            <h3>Измениния в законодательстве с июня 2018 года: результаты первых 3х месяцев работы законопроекта</h3>
+                          </div>
+                          <div class="flip-card__text">
+                              <p>Игорь Иванов, руководитель юридического отдела компании "ЖСК Проспект"<br>15 мая, 17.00-18.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="flip-card__back">
+                        <div class="flip-card-back__content">
+                        <div class="flip-card__back-head-text">
+                          <h3>Измениния в законодательстве с июня 2018 года: результаты первых 3х месяцев работы законопроекта</h3>
+                          <p>Игорь Иванов, руководитель юридического отдела компании "ЖСК Проспект"<br>15 мая, 17.00-18.</p>
+                      </div>
+                      <div class="flip-card__back-list-of-items">
+                        <ul>
+                          <li>Новый закон: первые итоги</li>
+                          <li>Практика использования эскроу-счетов</li>
+                          <li>Новые подходы к фондированию строительства</li>
+                          <li>Изменения в процедуре регистрации договоров</li>
+                          <li>Дальнейшие изменения в законодательстве</li>
+                        </ul>
+                        </div>
+                      </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="flip-card-container">
+                      <div class="flip-card-wrapper">
+                        <div class="flip-card__front flip-card_one">
+                          <div class="flip-card__content">
+                            <div class="flip-card__header">
+                              <h3>Измениния в законодательстве с июня 2018 года: результаты первых 3х месяцев работы законопроекта</h3>
+                            </div>
+                            <div class="flip-card__text">
+                                <p>Игорь Иванов, руководитель юридического отдела компании "ЖСК Проспект"<br>15 мая, 17.00-18.</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card__back">
+                          <div class="flip-card-back__content">
+                          <div class="flip-card__back-head-text">
+                            <h3>Измениния в законодательстве с июня 2018 года: результаты первых 3х месяцев работы законопроекта</h3>
+                            <p>Игорь Иванов, руководитель юридического отдела компании "ЖСК Проспект"<br>15 мая, 17.00-18.</p>
+                        </div>
+                        <div class="flip-card__back-list-of-items">
+                          <ul>
+                            <li>Новый закон: первые итоги</li>
+                            <li>Практика использования эскроу-счетов</li>
+                            <li>Новые подходы к фондированию строительства</li>
+                            <li>Изменения в процедуре регистрации договоров</li>
+                            <li>Дальнейшие изменения в законодательстве</li>
+                          </ul>
+                          </div>
+                        </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="flip-card-container">
+                        <div class="flip-card-wrapper">
+                          <div class="flip-card__front flip-card_two">
+                            <div class="flip-card__content">
+                              <div class="flip-card__header">
+                                <h3>Измениния в законодательстве с июня 2018 года: результаты первых 3х месяцев работы законопроекта</h3>
+                              </div>
+                              <div class="flip-card__text">
+                                  <p>Игорь Иванов, руководитель юридического отдела компании "ЖСК Проспект"<br>15 мая, 17.00-18.</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="flip-card__back">
+                            <div class="flip-card-back__content">
+                            <div class="flip-card__back-head-text">
+                              <h3>Измениния в законодательстве с июня 2018 года: результаты первых 3х месяцев работы законопроекта</h3>
+                              <p>Игорь Иванов, руководитель юридического отдела компании "ЖСК Проспект"<br>15 мая, 17.00-18.</p>
+                          </div>
+                          <div class="flip-card__back-list-of-items">
+                            <ul>
+                              <li>Новый закон: первые итоги</li>
+                              <li>Практика использования эскроу-счетов</li>
+                              <li>Новые подходы к фондированию строительства</li>
+                              <li>Изменения в процедуре регистрации договоров</li>
+                              <li>Дальнейшие изменения в законодательстве</li>
+                            </ul>
+                            </div>
+                          </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
 
 
 
 
 <!--
       ****************************REGISTRATION FORM******************************** -->
-      <div class="registration-form_wrapper">
+      <div id="F" class="registration-form_wrapper">
       <h1>Знания для уверенности!</h1>
       <p>Регистрируйтесь, чтобы получить досуп ко всем вебинарам</p>
 
-      <form class="registration-form-form" action="index.html" method="post">
+      <form  class="registration-form-form" action="index.html" method="post">
       <div class="registration-form-liner">
         <input type="text" name="" placeholder="Имя, Фамилия">
         <input type="text" name="" placeholder="Телефон">
@@ -376,7 +816,7 @@
 
     </div>
 
-      <a href="#reguster_form"><input type="button" class="input_button" value="Зарегистрироваться"></a>
+      <a href="#F"><input type="button" class="input_button" value="Зарегистрироваться"></a>
 
       <p>Нажимая кнопку "Зарегистрироваться", вы выражаете согасие на обратботку персональных данных и получаете доступ ко всем вебинарам цикла</p>
       <!-- NOTE: Добавь Анимацию! -->
@@ -409,6 +849,20 @@
 
         </div>
 
+        <!-- *************************************** ЛИНИЯ ********************* -->
+
+
+        <div class="line">
+          <div class="line__one">
+          </div>
+          <div class="line__two">
+          </div>
+          <div class="line__three">
+          </div>
+          <div class="line__four">
+          </div>
+        </div>
+
 
         <!-- *************************************** ФУТЕР ********************* -->
 
@@ -418,7 +872,7 @@
          <div class="footer_column">
            <p><img src="media/logo.png" alt="Новостройкин"></a></p>
            <p><a class="phone" style="text-decoration:none;" href="tel: +7485000721">+7 (485) 5000-721</a></p>
-           <p><a href="#reguster_form"><input type="button" class="input_button" value="Свяжитесь с нами!"></a></p>
+           <p><a href="#F"><input type="button" class="input_button" value="Свяжитесь с нами!"></a></p>
          </div>
 
          <div class="footer_column">
@@ -430,8 +884,9 @@
            </ul><br>
 
 
+           <span>Наш адрес:</span>
            <address class="address">
-          <span>Наш адрес</span>    г.Москва, ул.Газгольдерная <br>
+             г.Москва, ул.Газгольдерная <br>
              дом 35 офис 24
            </address>
 
