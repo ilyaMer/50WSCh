@@ -126,7 +126,7 @@
     height: 200px;
     width: 200px;
     border: 1px solid red;
-    transform: rotateZ(45deg) translateY(50px);
+    /* transform: rotateZ(45deg) translateY(50px); */
     position: relative;
     /* position: absolute;
     top: 25px;
@@ -134,8 +134,23 @@
     /* z-index: 4001;
     overflow: hidden; */
     /* transform: translate(0, 50px); */
+    transition-property: transform;
+    transition-duration: .5s;
+    transition-timing-function: s
 
   }
+
+  .cubic_fall_down:hover {
+    height: 200px;
+    width: 200px;
+    border: 1px solid red;
+    transform: matrix(0.71,0.71,-0.71,0.71,0,100);
+    position: relative;
+    border: 1px solid green;
+
+  }
+
+
 
   /* .cubic_fall_down:hover {
     height: 200px;
@@ -169,18 +184,20 @@
    height: 5000px
  }
 
- .cubic_grown.first {
+ /* .cubic_grown.first {
    width: 100px;
    height: 100px;
    border: 1px solid black;
    transition-delay: 3s;
    transform: rotate(45deg) scale(1.5);
-   transition-duration: 3s;
-   transition-property: 
 
 
 
- }
+
+ } */
+
+
+
 
 
     </style>
@@ -243,6 +260,11 @@
       </div>
 
       <div class="cubic_grown first">
+      </div>
+
+      <div class="cubic_next">
+
+
       </div>
 
   </body>
